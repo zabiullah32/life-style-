@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فشتن استایل</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'B Nazanin', 'Segoe UI', Tahoma, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header h1 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #667eea;
+            font-size: 1.3rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .col {
+            flex: 0 0 calc(25% - 20px);
+            min-width: 250px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card-title {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        
+        .card-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        @media (max-width: 992px) {
+            .col {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .col {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>lifestyle fashan show</h1>
+        <p>در لیف استایل فشن شما فقط لباس نمی خرید بلکه یک سبک زندکی زیبا و با اعتماد را انتخاب  می کنید</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- محصول 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/product1.jpg" alt="product1">
+                    <div class="card-body">
+                        <h3 class="card-title">مسول برنامه </h3>
+                        <p class="card-text">سلام خوش آمدید</p>
+                        <a href="#" class="btn">zabi ullah habibi</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/product2.jpg" alt="product2">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 1</h3>
+                        <p class="card-text"></p>محصول جدید اول </p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/produt3.jpg" alt="produt3">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 2</h3>
+                        <p class="card-text">محصول جدید دوم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/z18.jpg" alt="z18">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 3</h3>
+                        <p class="card-text">محصول جدید سوم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/z19.jpg" alt="z19">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 5</h3>
+                        <p class="card-text">محصول پنجم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/z20.jpg" alt="z20">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 6</h3>
+                        <p class="card-text">محصول ششم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 7 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/z22.jpg" alt="z22">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 7</h3>
+                        <p class="card-text">محصول هفتم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصول 8 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/z24.jpg" alt="z24">
+                    <div class="card-body">
+                        <h3 class="card-title">محصول 8</h3>
+                        <p class="card-text">محصول هشتم</p>
+                        <a href="#" class="btn">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
